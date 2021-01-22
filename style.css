@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.todo-container {
+  width: 65vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 25%;
+}
+
+.title {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  padding: 0.5rem 1rem;
+}
+
+.title p {
+  color: #f3f3f3;
+  font-weight: bold;
+  font-size: 18px;
+}
+.status:nth-child(even) {
+  background-color: #eee;
+}
+
+#add_btn {
+  outline: none;
+  border: none;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: #a5a5a5;
+  cursor: pointer;
+}
+
+#add_btn:hover {
+  background-color: #999;
+}
+#add_btn p {
+  color: #fbfbfb;
+  font-weight: bold;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3rem 0;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 2px 4px;
+}
+
+.todo p,
+.todo span {
+  cursor: pointer;
+}
+
+.todo span {
+  font-size: 25px;
+  color: #999;
+}

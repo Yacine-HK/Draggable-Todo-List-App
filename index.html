@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draggable Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <div class="status">
+        <div class="title"><p>No Status</p></div>
+
+        <button id="add_btn" data-target-modal="#todo_form">
+          <p>+ Add Todo</p>
+        </button>
+
+        <div class="todo" draggable="true">
+          <p>Buy a Pizza</p>
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div class="status">
+        <div class="title"><p>Not Started</p></div>
+      </div>
+      <div class="status">
+        <div class="title"><p>In Progress</p></div>
+      </div>
+      <div class="status">
+        <div class="title"><p>Completed</p></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
